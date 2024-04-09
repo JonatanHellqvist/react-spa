@@ -3,7 +3,7 @@
 function Info() {
 	return (
 		<div>
-			<h3>Personal</h3>
+			<h3>Info</h3>
 		</div>
 	);
 }
