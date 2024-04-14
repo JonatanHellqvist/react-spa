@@ -1,4 +1,4 @@
-import './styles/PageHeader.css'
+import './styles/Page.css'
 
 function Info() {
 	return (
