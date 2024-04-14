@@ -1,0 +1,19 @@
+#MenuBtns {
+	/* background-color: rgb(109, 2, 2); */
+	display: flex;
+	background-color: rgb(218, 190, 154);
+	justify-content: center;
+	text-decoration: none;
+	
+}
+#MenuBtns a {
+	margin: 0 5px 5px;
+	color: black;
+	text-decoration: none; 
+  }
+
+  #MenuBtns a:hover {
+	margin: 0 5px 5px;
+	color: rgb(116, 45, 45); 
+	text-decoration: none; 
+  }

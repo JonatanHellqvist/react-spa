@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Satisfy&display=swap');
+
+#Headerbox {
+font-family: "Sacramento", cursive;
+width: 100vw;
+text-align: center;
+align-content: center;
+font-size: 35px;
+background-color: rgb(228, 201, 167);
+}
+h1 {
+margin: 0;
+padding: 50px;	
+}

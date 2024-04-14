@@ -1,0 +1,36 @@
+{
+  "bookedTimes": [
+    {
+      "id": "aa01",
+      "date": "2024-04-17",
+      "slot": "Eftermiddag",
+      "package": "Cold",
+      "name": "Kalle",
+      "email": "dd@ll.com"
+    },
+    {
+      "id": "99f9",
+      "date": "2024-04-25",
+      "slot": "Eftermiddag",
+      "package": "Cold",
+      "name": "kalle",
+      "email": "kalle@kalle.com"
+    },
+    {
+      "id": "c18e",
+      "date": "2024-04-16",
+      "slot": "Förmiddag",
+      "package": "Hot",
+      "name": "Jonatan",
+      "email": "jonata@jonatan.com"
+    },
+    {
+      "id": "a9cd",
+      "date": "2024-04-25",
+      "slot": "Förmiddag",
+      "package": "Hot",
+      "name": "Anna",
+      "email": "anna@anna.com"
+    }
+  ]
+}

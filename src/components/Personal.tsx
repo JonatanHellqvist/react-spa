@@ -1,11 +1,21 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////||Kan användas vid ett senare tillfälle om man vill visa personal||/////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-function Personal() {
-	return (
-		<div>
-			<h3>Personal</h3>
-		</div>
-	);
-}
+// import './styles/PageHeader.css'
 
-export default Personal;
+// function Personal() {
+// 	return (
+// 		<>
+// 		<div className="PageHeader">
+// 			<h3>Personal</h3>
+// 		</div>
+// 		<div className="ContentBox">
+			
+// 		</div>
+// 		</>
+// 	);
+// }
+
+// export default Personal;

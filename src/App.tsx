@@ -3,15 +3,17 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 import Start from './components/Start'
-import Personal from './components/Personal'
 import Info from './components/Info'
-import Booking from './components/Booking'
 import Menu from './components/Menu'
+import BookingForm from './components/BookingForm';
+import Header from './components/Header'
 
 function App() {
   
   //vilken sida som visas
   const [page, setPage] = useState<string>("");
+
+  
 
   //för att urlen ska ändras
   useEffect (() => {
@@ -22,11 +24,11 @@ function App() {
         const queryParameters = new URLSearchParams(window.location.search);
         const getUrl = queryParameters.get("page");
 
-    if (getUrl) {
-      pageUrl = getUrl;
-      setPage(getUrl)
-    } else {
-      pageUrl = "start"
+      if (getUrl) {
+        pageUrl = getUrl;
+        setPage(getUrl)
+      } else {
+        pageUrl = "start"
     }
     } 
 
@@ -37,15 +39,17 @@ function App() {
     )
   }, [page])
 
+
+  
+
   return (
     <>
-      <h1>Spa</h1>
+    <Header/>
       <Menu setPage={setPage}/>
       {
         {
           "info": <Info />,
-          "personel": <Personal/>,
-          "booking": <Booking/>
+          "booking": <BookingForm/>,
         } [page] || <Start/>
       }
     </>
