@@ -31,6 +31,30 @@
       "package": "Hot",
       "name": "Anna",
       "email": "anna@anna.com"
+    },
+    {
+      "id": "7cb8",
+      "date": "2024-05-03",
+      "slot": "Förmiddag",
+      "package": "Hot",
+      "name": "ddd",
+      "email": "ddd@ddd.com"
+    },
+    {
+      "id": "019c",
+      "date": "2024-05-03",
+      "slot": "Förmiddag",
+      "package": "Hot",
+      "name": "dd",
+      "email": "ddd@ddd.com"
+    },
+    {
+      "id": "7dd0",
+      "date": "2024-05-03",
+      "slot": "Förmiddag",
+      "package": "Cold",
+      "name": "dd",
+      "email": "dddd@ddd.com"
     }
   ]
 }

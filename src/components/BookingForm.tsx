@@ -39,7 +39,7 @@ useEffect(() => {
 }, []);
 
 const fetchBookedTimes = () => {
-	fetch("http://localhost:3000/bookedTimes")
+	fetch("http://localhost:8080/bookings")
 		.then(res => res.json())
 		.then(data => {
 			const updatedBookedTimes = data.map((booking: { date: string; slot: string; package: string}) => ({
@@ -52,6 +52,29 @@ const fetchBookedTimes = () => {
 		.catch(error => console.error("Fel när bokningar hämtades:", error));
 };
 
+
+	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	// ----------- innan databasuppdatering ------------ //
+	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+// const fetchBookedTimes = () => {
+// 	fetch("http://localhost:3000/bookedTimes")
+// 		.then(res => res.json())
+// 		.then(data => {
+// 			const updatedBookedTimes = data.map((booking: { date: string; slot: string; package: string}) => ({
+//                 date: new Date(booking.date),
+//                 slot: booking.slot,
+// 				package: booking.package
+//             }));
+// 			setBookedTimes(updatedBookedTimes);
+// 		})
+// 		.catch(error => console.error("Fel när bokningar hämtades:", error));
+// };
+
+
+	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	// ----------- innan databasuppdatering ------------ //
+	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 const fetchRedDays = () => {
 	fetch('http://sholiday.faboul.se/dagar/v2.1/2024')
 		.then(res => {
@@ -79,13 +102,30 @@ const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
 		alert('Fyll i alla fälten för att skapa en bokning');
 		return;
 	}
-	fetch("http://localhost:3000/bookedTimes", {
+	fetch("http://localhost:8080/booking", {
 		method: "POST",
 		headers: {
 			"content-type":"application/json"
 		},
 		body: JSON.stringify({date: selectedDateString, slot: formData.spaTime, package: formData.spaPackage, name: formData.name, email: formData.email, })
 	})
+
+
+	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	// ----------- innan databasuppdatering ------------ //
+	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	
+	//fetch("http://localhost:3000/bookedTimes", {
+	// 	method: "POST",
+	// 	headers: {
+	// 		"content-type":"application/json"
+	// 	},
+	// 	body: JSON.stringify({date: selectedDateString, slot: formData.spaTime, package: formData.spaPackage, name: formData.name, email: formData.email, })
+	// })
+
+	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	// ----------- innan databasuppdatering ------------ //
+	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	.then(() => {
 		setFormData({
 			name: '',
