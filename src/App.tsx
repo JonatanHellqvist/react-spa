@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import './App.css'
+// import './styles/Page.css'
 
 import Start from './components/Start'
 import Info from './components/Info'
