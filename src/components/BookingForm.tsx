@@ -39,7 +39,7 @@ useEffect(() => {
 }, []);
 
 const fetchBookedTimes = () => {
-	fetch("http://localhost:8080/bookings")
+	fetch("https://oyster-app-asygl.ondigitalocean.app/bookings")
 		.then(res => res.json())
 		.then(data => {
 			const updatedBookedTimes = data.map((booking: { date: string; slot: string; package: string}) => ({
@@ -102,7 +102,7 @@ const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
 		alert('Fyll i alla fälten för att skapa en bokning');
 		return;
 	}
-	fetch("http://localhost:8080/booking", {
+	fetch("https://oyster-app-asygl.ondigitalocean.app/booking", {
 		method: "POST",
 		headers: {
 			"content-type":"application/json"
