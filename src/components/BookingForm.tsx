@@ -76,7 +76,7 @@ const fetchBookedTimes = () => {
 	// ----------- innan databasuppdatering ------------ //
 	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 const fetchRedDays = () => {
-	fetch('http://sholiday.faboul.se/dagar/v2.1/2024')
+	fetch('https://sholiday.faboul.se/dagar/v2.1/2024')
 		.then(res => {
 			return res.json();
 		})
