@@ -30,7 +30,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   /* background-color: #535bf2; */
-  background-image: url("src/assets/kattspa.jpg");
+  /* background-image: url("src/assets/kattspa.jpg"); */
+  background-image: url("/src/assets/kattspa.jpg");
   background-size: cover;
   color: black;
 }
